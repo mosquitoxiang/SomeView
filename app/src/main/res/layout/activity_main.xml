@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--    <com.xwk.someview.proportion.PercentageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="40dp"/>-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.xwk.someview.password.PasswordEditText
+        android:id="@+id/psd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        app:bgColor="#d1d2d6"
+        app:bgCorner="3dp"
+        app:bgSize="1dp"
+        app:divisionLineColor="#d1d2d6"
+        app:divisionLineSize="2dp"
+        app:passwordHeight="50dp"
+        app:passwordNumber="6"
+        app:passwordRadius="5dp" />
+
+<!--    <com.xwk.someview.password.CustomKeyBoard-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>
